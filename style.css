@@ -1,0 +1,187 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+div.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  opacity: 1;
+}
+
+.button {
+  background: #6a3093;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: none;
+  border-radius: 5em;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1em;
+  bottom: 1em;
+  display: fixed;
+  bottom: 0;
+  opacity: 1;
+  z-index: 5000;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font: 1.5em "Lato", sans-serif;
+}
+
+.givethOverlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: .75;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-image: url("assets/giveth.svg");
+  z-index: 4000;
+}
+
+.capt{
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.bgimg-1 {
+  background-image: url("assets/1.jpg");
+}
+
+.bgimg-2 {
+  background-image: url("assets/2.jpg");
+}
+
+.bgimg-3 {
+  background-image: url("assets/3.jpg");
+}
+
+.bgimg-4 {
+  background-image: url("assets/4.jpg");
+}
+
+.bgimg-5 {
+  background-image: url("assets/5.jpg");
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  bottom: 15%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .button {
+    letter-spacing: .15em;
+    font-size: 1em;
+  }
+  .caption span.border {
+    padding: .4em;
+    letter-spacing: .15em;
+    font-size: 1em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .button {
+    letter-spacing: .2em;
+    font-size: 1.25em;
+  }
+  .caption span.border {
+    padding: .5em;
+    letter-spacing: .2em;
+    font-size: 1.25em;
+  }}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .button {
+    letter-spacing: .23em;
+    font-size: 1.5em;
+  }
+  .caption span.border {
+    padding: .6em;
+    letter-spacing: .23em;
+    font-size: 1.5em;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .button {
+    letter-spacing: .27em;
+    font-size: 1.7em;
+  }
+  .caption span.border {
+    padding: .7em;
+    letter-spacing: .27em;
+    font-size: 1.7em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .button {
+    letter-spacing: .3em;
+    font-size: 2em;
+  }
+  .caption span.border {
+    padding: .8em;
+    letter-spacing: .3em;
+    font-size: 2em;
+  }
+}
